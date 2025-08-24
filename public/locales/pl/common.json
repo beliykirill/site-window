@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Elemental: 2D MMORPG",
+    "description": "Elemental — MMORPG в пиксельной графике без лутбоксов. Классы, улучшения, реинкарнация и кооператив ждут вас в мире захватывающих приключений."
+  },
+
+  "header": {
+    "routes": {
+      "main": "Strona główna",
+      "about": "O grze",
+      "previews": "Zwiastun gry"
+    },
+    "button": "Pobierz"
+  },
+
+  "footer": {
+    "license": "Strona przeznaczona wyłącznie dla osób pełnoletnich.\nWejdź tylko, jeśli masz odpowiedni wiek zgodnie z lokalnymi przepisami.",
+    "routes": {
+      "main": "Strona główna",
+      "about": "O grze",
+      "previews": "Zwiastun gry"
+    },
+    "agreements": {
+      "gdpr": "GDPR",
+      "about_us": "O nas",
+      "policy": "Polityka Prywatności",
+      "terms": "Regulamin",
+      "cookies": "Pliki cookie"
+    }
+  },
+
+  "age_verification": {
+    "title": "Weryfikacja wieku",
+    "description": "Aby zapewnić bezpieczne i przyjemne korzystanie z serwisu, wymagamy weryfikacji wieku. Wchodząc na naszą stronę, potwierdzasz, że masz 18 lat lub więcej. Dziękujemy za zrozumienie i życzymy odpowiedzialnej zabawy.",
+    "button": "Mam 18 lat lub więcej"
+  },
+
+  "cookies_consent": {
+    "title": "Używamy plików cookie",
+    "description": "Aby poprawić Twoje doświadczenie na stronie, używamy plików cookie, które pomagają zapisywać ustawienia, analizować ruch i personalizować treści.\nWięcej informacji w naszej <0>Polityce prywatności</0>.",
+    "button": "Akceptuję"
+  }
+}
