@@ -4,7 +4,6 @@ import { i18n } from './next-i18next.config';
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   output: 'standalone',
-  outputFileTracing: true,
   i18n,
   compiler: {
     styledComponents: true,
