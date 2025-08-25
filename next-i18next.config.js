@@ -4,6 +4,7 @@ const nextConfig = {
         defaultLocale: 'pl',
         locales: ['pl'],
         localeDetection: false,
+        localePath: typeof window === 'undefined' ? require('path').resolve('./public/locales') : '/locales',
     },
     detection: {
         order: ['cookie'],
