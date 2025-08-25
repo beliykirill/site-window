@@ -5,13 +5,13 @@ import { COMMON_MEDIA } from 'shared/lib/responsive-media';
 import { AccentText, SectionText } from 'shared/ui';
 import styled from 'styled-components';
 
-export const getServerSideProps = async ({ params }) => {
+export const getServerSideProps = async ({ params, locale }) => {
   const ns = params?.slug;
 
   return {
     props: {
       ns,
-      ...(await serverSideTranslations('pl', ['common', ns])),
+      ...(await serverSideTranslations(locale!, ['common', ns])),
     },
   };
 };

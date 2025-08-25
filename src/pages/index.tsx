@@ -4,8 +4,8 @@ import { About } from 'widgets/about';
 import { Main } from 'widgets/main';
 import { Previews } from 'widgets/previews';
 
-export const getServerSideProps = async () => ({
-  props: { ...(await serverSideTranslations('pl', ['common', 'home'])) },
+export const getServerSideProps = async ({ locale }) => ({
+  props: { ...(await serverSideTranslations(locale!, ['common', 'home'])) },
 });
 
 const HomePage: FC = () => (

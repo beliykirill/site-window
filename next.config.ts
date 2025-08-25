@@ -1,10 +1,12 @@
 import type { NextConfig } from 'next';
-import { i18n } from './next-i18next.config';
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   output: 'standalone',
-  i18n,
+  i18n: {
+    defaultLocale: 'pl',
+    locales: ['pl'],
+  },
   compiler: {
     styledComponents: true,
   },
