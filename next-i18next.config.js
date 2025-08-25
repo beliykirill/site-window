@@ -5,6 +5,16 @@ const nextConfig = {
         locales: ['pl'],
         localeDetection: false,
     },
+    detection: {
+        order: ['cookie'],
+        caches: ['cookie'],
+        lookupCookie: 'NEXT_LOCALE',
+        cookieOptions: {
+            name: 'NEXT_LOCALE',
+            secure: true,
+            sameSite: 'strict',
+        },
+    },
 };
 
 
