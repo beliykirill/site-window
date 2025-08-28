@@ -15,13 +15,13 @@ export const CookiesConsent: FC = () => {
 
   const [isVisible, setVisible] = useState(false);
 
-  useEffect(() => {
-    if (!isVisible) return;
-
+  const handleAcceptCookie = () => {
     setCookie(COOKIES_VARIABLES.IS_COOKIES_ACCEPTED, 'true', {
       maxAge: ONE_YEAR,
     });
-  }, [isVisible]);
+
+    setVisible(false);
+  };
 
   useEffect(() => {
     setVisible(!isCookiesAccepted);
@@ -41,7 +41,7 @@ export const CookiesConsent: FC = () => {
           </AccentText>
         </TextContainer>
 
-        <Button onClick={() => setVisible(false)}>
+        <Button onClick={handleAcceptCookie}>
           {t('cookies_consent.button')}
         </Button>
       </Container>
